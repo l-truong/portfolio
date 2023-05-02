@@ -42,12 +42,12 @@ function lightMode() {
 
 // Switch Theme
 function switchTheme(event) {    
-    if (localStorage.getItem('theme') === 'dark' || localStorage.getItem('theme') === null) {
-        localStorage.setItem('theme', 'light');      
-        lightMode();  
+    if (localStorage.getItem('theme') === 'light' || localStorage.getItem('theme') === null) {
+        localStorage.setItem('theme', 'dark'); 
+        darkMode();    
     } else {
-        localStorage.setItem('theme', 'dark');        
-        darkMode();
+        localStorage.setItem('theme', 'light');        
+        lightMode();
     }
 }
 
@@ -55,7 +55,7 @@ function switchTheme(event) {
 portfolioButton.addEventListener('click', portfolioTab);
 skillsButton.addEventListener('click', skillsTab);
 lightdarkSwitch.addEventListener('click', switchTheme);
-if (localStorage.getItem('theme') === "light") { lightMode(); } else { darkMode() }
+if (localStorage.getItem('theme') === "light" || localStorage.getItem('theme') === null) { lightMode(); } else { darkMode() }
 if (localStorage.getItem('tab') === "skills") { skillsTab(); } 
 
 // To top button
