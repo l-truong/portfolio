@@ -163,7 +163,8 @@
             a {
                 color: inherit;
                 text-decoration: inherit; 
-                transition: 0.3s;                 
+                transition: 0.3s;           
+                font-size: 1.1rem;   
                 &:hover {
                     transform: scale(1.05);                                 
                 }
@@ -284,6 +285,7 @@
             justify-content: space-between;
             width: -moz-available;     
             animation: fade-in 1.5s;    
+            width: 100%;
 			.project { 
                 display: flex;
                 flex-direction: column;
@@ -600,6 +602,16 @@
         font-size: 0.725rem;
     }
     .container {
+        .section-0 {
+            .light-dark-mode-button {
+                i {
+                    font-size: 1.5rem;
+                    height: 3.5rem;
+                    line-height: 3.5rem;
+                    width: 3.5rem;
+                }
+            }
+        }
         .section-1 {
             .profil-info {
                 .profil-text {
@@ -666,6 +678,13 @@
                 font-size: 1rem;
                 a {
                     font-size: inherit;
+                }
+            }
+            .top-button {
+                width: 3.5rem;
+                height: 3.5rem;
+                i {
+                    font-size: 1.5rem;
                 }
             }
         }

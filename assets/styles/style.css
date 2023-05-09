@@ -169,6 +169,7 @@
   color: inherit;
   text-decoration: inherit;
   transition: 0.3s;
+  font-size: 1.1rem;
 }
 .container .section-1 .profil-facts a:hover {
   transform: scale(1.05);
@@ -288,6 +289,7 @@
   justify-content: space-between;
   width: -moz-available;
   animation: fade-in 1.5s;
+  width: 100%;
 }
 .container .section-3 .gallery .project {
   display: flex;
@@ -561,6 +563,12 @@
   * {
     font-size: 0.725rem;
   }
+  .container .section-0 .light-dark-mode-button i {
+    font-size: 1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 3.5rem;
+  }
   .container .section-1 .profil-info .profil-text .socials-button a i {
     font-size: 1.75rem;
   }
@@ -605,5 +613,12 @@
   }
   .container .section-4 .footer_text a {
     font-size: inherit;
+  }
+  .container .section-4 .top-button {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .container .section-4 .top-button i {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
