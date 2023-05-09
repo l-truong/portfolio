@@ -16,27 +16,26 @@
 </head>
 <body>  
     <div class="container" id="top">
-        <div class="section-0">
+        <div class="section-0" data-aos="fade-down" data-aos-delay="500">
             <div class="light-dark-mode-button">
                 <i class="fa-regular fa-sun"></i>
             </div>
         </div>
         <div class="section-1">      
             <div class="profil-info">
-                <img src="assets/img/profil_picture.jpg" alt="profil picture">
-                <div class="profil-text">
+                <img src="assets/img/profil_picture.jpg" alt="profil picture"  data-aos="fade-up-left">
+                <div class="profil-text" data-aos="fade-up">
                     <p class="profil-title">Laura Truong</p>
                     <p>Software Engineer</p>
                     <div class="socials-button">
                         <a href="https://github.com/l-truong" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/laura-truong-280544150/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="profil-facts">
-                <p><a href="https://www.esiee.fr/en" target="_blank">ESIEE</a>Master of Engineering</p>
-                <p>4<br> Years of work experience</p>
-                <p>User<br> Experience<br> Oriented</p>
+                <p data-aos="fade-left"><a href="https://www.esiee.fr/en" target="_blank">ESIEE</a>Master of Engineering</p>
+                <p data-aos="fade-up">4<br> Years of work experience</p>
+                <p data-aos="fade-right">User<br> Experience<br> Oriented</p>
             </div>
             <div class="profil-button">
                 <a href="./assets/laura_truong_cv_2023.pdf" download class="button download-cv-button">Download CV <i class="fa-solid fa-file-arrow-down"></i></a>
@@ -52,7 +51,7 @@
         <div class="section-3">
             <div class="gallery">
                 <!---->
-                <div class="project">
+                <div class="project" class="project aos-init" data-aos="flip-right">
                     <div class="project-text">
                       <p class="project-name">Quote Generator</p>
                       <p class="project-technologies">[HTML/CSS/JS]</p>
@@ -63,7 +62,7 @@
                     </div>                 
                     <img src="assets/img/01-quote-generator.png" class="project-img"/>
                 </div>
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-left" data-aos-delay="500">
                     <div class="project-text">
                       <p class="project-name">Music Player</p>
                       <p class="project-technologies">
@@ -83,7 +82,7 @@
                     <img src="assets/img/02-music-player.png" class="project-img"/>
                 </div>
                 <!---->
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-right">
                     <div class="project-text">
                       <p class="project-name">Video Player</p>                                                    
                       <p class="project-technologies">
@@ -100,7 +99,7 @@
                     </div>                 
                     <img src="assets/img/03-video-player.png" class="project-img"/>
                 </div>              
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-left" data-aos-delay="500">
                     <div class="project-text">
                       <p class="project-name">Full Screen Animated Menu</p>
                       <p class="project-technologies">[HTML/CSS/JS]</p>
@@ -112,7 +111,7 @@
                     <img src="assets/img/06-navigation-nation.png" class="project-img"/>
                 </div>                   
                 <!---->  
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-right">
                     <div class="project-text">
                       <p class="project-name">Form Validator</p>
                       <p class="project-technologies">[HTML/CSS/JS]</p>
@@ -123,7 +122,7 @@
                     </div>                 
                     <img src="assets/img/07-form-validator.png" class="project-img"/>
                 </div>          
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-left" data-aos-delay="500">
                     <div class="project-text">
                       <p class="project-name">Password Generator</p>
                       <p class="project-technologies">[HTML/CSS/JS]</p>
@@ -135,7 +134,7 @@
                     <img src="assets/img/10-password-generator.png" class="project-img"/>
                 </div>                  
                 <!---->          
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-right">
                     <div class="project-text">
                       <p class="project-name">Weather App</p>
                       <p class="project-technologies">
@@ -150,7 +149,7 @@
                     </div>                 
                     <img src="assets/img/09-weather app.png" class="project-img"/>
                 </div>
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-left" data-aos-delay="500">
                     <div class="project-text">
                       <p class="project-name">Todo App</p>
                       <p class="project-technologies">[HTML/CSS/Vue.js]</p>
@@ -162,7 +161,7 @@
                     <img src="assets/img/11-todo-app.png" class="project-img"/>
                 </div>      
                 <!---->    
-                <div class="project">
+                <div class="project aos-init" data-aos="flip-right">
                     <div class="project-text">
                         <p class="project-name">Infinite Scroll</p>
                         <p class="project-technologies">
@@ -241,10 +240,14 @@
         <div class="section-4">
             <p class="footer_text">
                 © UI/UX by <a href="https://www.figma.com/@victoralvarado" target="_blank">Victor Alvarado</a><br>
+                Animation using <a href="https://michalsnik.github.io/aos/">"AOS"</a> library<br>
                 Coding by Laura Tuong. 2023 All rigths reserved
             </p>
-            <a class="top-button" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+            <a class="top-button" href="#top"><i class="fa-solid fa-arrow-up"></i></a>            
         </div>
+        <!-- AOS.js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="aos.js"></script>
         <!-- Scripts -->
         <script src="script.js"></script>
     </div>    
