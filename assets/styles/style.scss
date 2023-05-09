@@ -54,6 +54,9 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */           
 }
+body {
+    overflow-x: hidden
+}
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -499,6 +502,11 @@
             }
         }
 	}
+}
+
+/** AOS responsibe fix **/
+.aos-init:not(.aos-animate):after {
+    position: fixed;
 }
 
 /** RESPONSIVE **/
