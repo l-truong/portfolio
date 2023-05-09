@@ -54,10 +54,6 @@
        user-select: none; /* Standard syntax */
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -499,11 +495,6 @@ body {
 .container .section-4 .top-button:hover {
   transform: scale(1.1);
   cursor: pointer;
-}
-
-/** AOS responsibe fix **/
-.aos-init:not(.aos-animate):after {
-  position: fixed;
 }
 
 /** RESPONSIVE **/
