@@ -363,6 +363,10 @@
   position: absolute;
   transition: opacity 0.3s;
 }
+.container .section-3 .gallery .project .project-img:hover {
+  filter: grayscale(1);
+  transition: all 1s ease-out;
+}
 .container .section-3 .gallery .project .website {
   height: auto;
   width: 100%;
@@ -428,6 +432,26 @@
 }
 .container .section-3 .skills .tech-skills .tech-skill-name .icon-adobe {
   background: url("../img/Web/icons8-adobe.svg") no-repeat;
+  background-size: auto;
+  height: inherit;
+  width: inherit;
+  max-height: 12vh;
+  max-width: 12vh;
+  background-size: cover;
+  filter: var(--img-brightness);
+}
+.container .section-3 .skills .tech-skills .tech-skill-name .icon-jest {
+  background: url("../img/Web/jest.svg") no-repeat;
+  background-size: auto;
+  height: inherit;
+  width: inherit;
+  max-height: 12vh;
+  max-width: 12vh;
+  background-size: cover;
+  filter: var(--img-brightness);
+}
+.container .section-3 .skills .tech-skills .tech-skill-name .icon-scrum {
+  background: url("../img/Web/scrum-svgrepo-com.svg") no-repeat;
   background-size: auto;
   height: inherit;
   width: inherit;
